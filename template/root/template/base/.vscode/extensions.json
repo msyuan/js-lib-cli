@@ -1,0 +1,8 @@
+{
+  // 每一项都是一个插件 ID
+  "recommendations": [
+    "dbaeumer.vscode-eslint", // eslint 插件ID
+    "esbenp.prettier-vscode", // prettier 插件ID
+    "EditorConfig.EditorConfig" // EditorConfig 插件ID
+  ]
+}

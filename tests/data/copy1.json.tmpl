@@ -1,0 +1,33 @@
+{
+  "name": "<%=npmname%>",
+  "version": "1.0.0",
+  "description": "JavaScript库开发的工程模板",
+  "type": "module",
+  "keywords": [],
+  "author": "<%=username%>",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "dist/<%=name%>.cjs.min.js",
+  "module": "dist/<%=name%>.esm.min.js",
+  "jsnext": "dist/<%=name%>.esm.min.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com",
+    "access": "public"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "dev": "cross-env NODE_ENV=developmen rollup -c -w"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/plugin-transform-runtime": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "cross-env": "^7.0.3",
+    "rollup": "^3.25.1"
+  }
+}

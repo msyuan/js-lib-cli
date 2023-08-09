@@ -1,0 +1,57 @@
+# <%=npmname%>
+
+
+## 使用者指南
+
+### 通过pnpm等下载安装
+
+```bash
+pnpm install ||  npm install
+```
+
+### 如果使用Node.js环境
+
+```js
+const { <%=npmname%> } = require('<%=npmname%>');
+const newObj = <%=npmname%>({ a: 1 });
+```
+### 如果你是vite等环境
+
+```js
+import { <%=npmname%> } from '<%=npmname%>';
+
+<%=npmname%>({ a: 1 });
+```
+
+### 如果使用浏览器环境
+
+```html
+<script src="node_modules/<%=npmname%>/dist/<%=npmname%>.aio.js"></script>
+<script>
+  const newObj = <%=npmname%>({ a: 1 });
+</script>
+```
+
+## 贡献者指南
+
+首次运行需要先安装依赖
+```bash
+pnpm install ||  npm install
+```
+
+一键打包生成生产代码
+```bash
+pnpm build ||  npm run build
+```
+
+运行单元测试
+```bash
+pnpm test ||  npm run test
+```
+
+## 参与贡献
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request

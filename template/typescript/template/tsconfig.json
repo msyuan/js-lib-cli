@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    // ESNext 是一个始终表示 JavaScript 下一个版本的名称
+    "target": "ES2015",
+    "module": "ESNext",
+    "useDefineForClassFields": true,
+    // 模块解析策略，ts默认用node的解析策略，即相对的方式导入
+    "moduleResolution": "Node",
+    // 是否使用严格模式
+    "strict": true,
+    // 用来指定是否允许编译js文件, 默认为false
+    "allowJs": false,
+    "jsx": "preserve",
+    // 是否解析 JSON 模块，默认：false
+    "resolveJsonModule": true,
+    // 是否将每个文件转换为单独的模块，默认：false。
+    "isolatedModules": true,
+    // 通过为导入内容创建命名空间，实现 CommonJS 和 ES 模块之间的互操作性，默认为 true,支持使用 import cjs from 'cjs' 的方式引入 commonjs 包
+    "esModuleInterop": true,
+    // 指定项目运行时使用的库，可以引入对应的 d.ts 的类型声明文件
+    "lib": ["ESNext", "DOM"],
+    // 是否跳过声明文件的类型检查，这可以在编译期间以牺牲类型系统准确性为代价来节省时间，默认：false。
+    "skipLibCheck": true,
+    // 是否强制使用一致的命名规范，默认为 false。(也就是是否强制代码中使用的模块文件名必须和文件系统中的文件名保持大小写一致)
+    "forceConsistentCasingInFileNames": true,
+    // 是否检查未使用的局部变量
+    "noUnusedLocals": true,
+    // 是否检查未使用的参数
+    "noUnusedParameters": true,
+    // 生成相应的 '.d.ts' 文件
+    "declaration": true,
+    // 指定编译生成的类型声明文件输出的目录
+    "declarationDir": "./types",
+    // 解析非相对模块的基地址，默认是当前目录
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "/#/*": ["types/*"],
+      "/build/*": ["build/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "**/*.js", "**/*.cjs"]
+}

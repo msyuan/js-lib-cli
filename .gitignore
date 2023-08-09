@@ -1,0 +1,8 @@
+node_modules
+*.log
+demo
+project
+project1
+project2
+project3
+coverage

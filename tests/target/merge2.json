@@ -1,0 +1,13 @@
+{
+  "name": "copy",
+  "description": "JavaScript库开发的工程模板",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/plugin-transform-runtime": "^7.22.5",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0"
+  }
+}

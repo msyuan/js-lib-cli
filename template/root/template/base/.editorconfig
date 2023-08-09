@@ -1,0 +1,13 @@
+root = true   # 告诉EditorConfig插件，这是根文件，不用继续往上查找
+
+[*]
+charset = utf-8   #设置所有的文件的字符集是utf-8编码
+indent_style = space  #设置缩进风格：空格
+indent_size = 2       #缩进大小2个空格
+end_of_line = lf        #换行符1f
+insert_final_newline = true        #设为true表示使文件以一个空白行结尾
+trim_trailing_whitespace = true    #删除行尾的空格
+
+[*.md] # 表示仅 md 文件适用以下规则
+insert_final_newline = false
+trim_trailing_whitespace = false

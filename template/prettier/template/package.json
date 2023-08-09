@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lint-prettier": "prettier  --write src/ --check ."
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}

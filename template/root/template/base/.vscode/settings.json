@@ -1,0 +1,33 @@
+{
+  // 指定换行符，支持LF（\n）、CRLF（\r\n）、CR（\r）
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  // 是否开启eslint
+  "eslint.enable": true,
+  // VSCode 中的 ESLint 插件默认是不会检查 .ts 后缀的, 所以需要配置如下
+  "eslint.validate": ["javascript", "javascriptreact", "typescript"],
+  // 保存的时候自动格式化
+  "editor.formatOnSave": true,
+  // 自动格式化粘贴内容
+  "editor.formatOnPaste": true,
+  // 默认格式化工具选择prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 使用prettier去格式化JS\TS\JSON文件
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // code代码保存时，eslint、stylelint自动修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  // js重命名文件自动更新路径
+  "javascript.updateImportsOnFileMove.enabled": "always",
+}

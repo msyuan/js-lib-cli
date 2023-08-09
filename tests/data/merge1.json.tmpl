@@ -1,0 +1,9 @@
+{
+  "main": "dist/<%=name%>.cjs.min.js",
+  "scripts": {
+    "lint": "pnpm lint-eslint<%if (prettier) {%> && pnpm lint-prettier<%}%>"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
