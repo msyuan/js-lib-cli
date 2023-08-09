@@ -2,9 +2,9 @@
   "name": "js-lib-cli",
   "version": "1.0.0",
   "description": "一个快速创建JavaScript库开发项目的CLI工具",
-  "author": "laoyuan",
-  "license": "ISC",
-  "private": false,
+  "author": "Lao Yuan",
+  "license": "MIT",
+  "private": true,
   "type": "module",
   "main": "bin/index.js",
   "keywords": [
