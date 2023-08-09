@@ -11,14 +11,14 @@
 * 提供issue_template。
 * 提供好vscode的配置。
 * 使用rollup打包。
-* 支持输出多种模块的（IIFE、UMD、ESM）规范格式。
+* 支持输出多种模块的（CJS、UMD、ESM）规范格式。
 
 ## 二、使用者指南
 
 ### 1、通过pnpm等下载全局安装
 
 ```bash
-pnpm install -g js-lib-cli ||  npm install -g js-lib-cli
+pnpm i -g @msyuan/js-lib-cli ||  npm i -g @msyuan/js-lib-cli
 ```
 
 ### 2、如何初始化一个JS开发库项目
