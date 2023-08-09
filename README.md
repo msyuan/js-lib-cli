@@ -2,7 +2,18 @@
 
 一个方便快速创建JavaScript开发库项目的CLI工具
 
-## 一、使用者指南
+## 一、功能
+
+* 支持可持续构建到github。
+* 支持eslint和prettier。
+* 支持commitlint。
+* 支持单元测试，可选择vite和jest。
+* 提供issue_template。
+* 提供好vscode的配置。
+* 使用rollup打包。
+* 支持输出多种模块的（IIFE、UMD、ESM）规范格式。
+
+## 二、使用者指南
 
 ### 1、通过pnpm等下载全局安装
 
@@ -37,7 +48,7 @@ pnpm install
 js --help
 ```
 
-## 二、参与贡献
+## 三、参与贡献
 
 1.  Fork 本仓库
 2.  新建 Feat-xxx 分支
