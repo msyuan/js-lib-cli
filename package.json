@@ -9,9 +9,10 @@
   "main": "bin/index.js",
   "keywords": [
     "library",
+    "jscli",
     "cli",
     "js-cli",
-    "lib-cli",
+    "js-lib",
     "js-lib-cli"
   ],
   "repository": {
