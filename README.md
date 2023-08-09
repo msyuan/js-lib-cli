@@ -1,6 +1,6 @@
-# JS Lib CLI 创建JS库项目的CLI工具
+# JS Lib CLI 快速创建JS库开发的CLI工具
 
-一个方便快速创建JavaScript开发库项目的CLI工具
+一个方便快速创建JavaScript库开发项目的CLI工具
 
 ## 一、功能
 
