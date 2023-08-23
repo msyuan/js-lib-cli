@@ -3,6 +3,6 @@
     "lint-prettier": "prettier  --write src/ --check ."
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "prettier": "^3.0.2"
   }
 }

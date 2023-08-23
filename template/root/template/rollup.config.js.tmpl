@@ -6,9 +6,6 @@ import nodeResolve from '@rollup/plugin-node-resolve';
 import alias from '@rollup/plugin-alias';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import pkg from '../package.json';
-
-const version = pkg.version;
 
 console.log('import.meta.url', import.meta);
 //  __filename包含当前模块文件的绝对路径
@@ -20,13 +17,7 @@ const NODE_ENV = process.env.NODE_ENV; // 环境变量
 const isProd = NODE_ENV === 'production';
 
 
-const banner = `/*!
- * ${pkg.name} ${version}
- * Licensed under MIT
- */
-`;
-
-const name = <%=name%>;
+const name = '<%=name%>';
 
 export default {
   input: 'src/index.js', // 入口文件
@@ -35,19 +26,16 @@ export default {
       file: './dist/<%=name%>.esm.min.js', // 输出文件的路径和名称
       format: 'es', // 将软件包保存为 ES 模块文件，在现代浏览器中可以通过 <script type=module> 标签引入
       name: name, // 当format为iife和umd时必须提供，将作为全局变量挂在window(浏览器环境)下，打包后的全局变量
-      banner: banner,
     },
     {
       file: './dist/<%=name%>.cjs.min.js',
       format: 'cjs', // CommonJS，适用于 Node 和 Browserify/Webpack 有六种输出格式：amd / es/ system / iife / umd / cjs
       name: name,
-      banner: banner,
     },
     {
       file: './dist/<%=name%>.aio.js',
       format: 'umd', // 通用
       name: name,
-      banner: banner,
     },
   ],
   plugins: [
