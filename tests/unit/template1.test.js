@@ -14,7 +14,7 @@ import { clone } from "@utils/clone.js";
  *  测试模板初始化功能，模拟都选择值得情况
  */
 const cmdPath = path.join(process.cwd(), "/tests/");
-const projectName = "project";
+const projectName = "demo/project1";
 const options = {
   name: "clone-test",
   npmname: "clone-test",

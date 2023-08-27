@@ -6,7 +6,7 @@ import { init } from "../../bin/initTest.js";
  *  测试模板初始化功能，模拟不选择值得情况
  */
 const cmdPath = path.join(process.cwd(), "/tests/");
-const projectName = "project2";
+const projectName = "demo/project3";
 const options = {
   name: "clone",
   npmname: "clone",

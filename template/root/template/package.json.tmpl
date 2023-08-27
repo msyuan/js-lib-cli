@@ -7,9 +7,20 @@
   "author": "<%=username%>",
   "license": "MIT",
   "sideEffects": false,
-  "main": "dist/<%=name%>.cjs.min.js",
-  "module": "dist/<%=name%>.esm.min.js",
-  "jsnext": "dist/<%=name%>.esm.min.js",
+  "main": "lib/index.cjs",
+  "module": "lib/index.mjs",
+  "jsnext": "lib/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.cjs"
+    }
+  },
+  "files": [
+    "dist/",
+    "lib/",
+    "README.md"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.com",
     "access": "public"
@@ -28,6 +39,6 @@
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-terser": "^0.4.3",
     "cross-env": "^7.0.3",
-    "rollup": "^3.28.0"
+    "rollup": "^3.28.1"
   }
 }

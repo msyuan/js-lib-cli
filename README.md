@@ -23,7 +23,9 @@ pnpm i -g @msyuan/js-lib-cli ||  npm i -g @msyuan/js-lib-cli
 
 ### 2、如何初始化一个JS开发库项目
 
-#### 2.1、运行以下命令来创建一个新项目（mylib）
+#### 2.1、运行以下命令来创建一个新项目
+
+mylib为您的项目名
 
 ```js
 js create mylib
@@ -33,16 +35,23 @@ js create mylib
 
 ![preset](./public/demo.png)
 
-### 3、自主安装依赖
+### 3、自主安装依赖说明
+
+* 如果在提示预选阶段没有选择package manager，创建项目成功后，需执行下面的命令自主安装依赖。
+* 如果在提示预选阶段选择了husky，则需先初始化git仓库, 然后再安装依赖。
 
 ```js
 git init
 pnpm install
 ```
-1. 如果选择了husky，则需先初始化git仓库, 然后再安装依赖。
-2. 如果在提示选取阶段选择了package manager为pnpm\yarn\npm, 则会自动git init，然后自动安装依赖。
 
-### 4、可选项帮助命令
+如果在提示预选阶段选择了package manager为pnpm\yarn\npm, 则会自动git init，然后自动安装依赖。
+
+### 4、其他说明
+
+lib文件夹中的入口文件，文件名需修改成自己实际的JS库名, dist也是如此（它们只是一个demo，build后可删除demo文件）。
+
+### 5、可选项帮助命令
 
 ```js
 js --help

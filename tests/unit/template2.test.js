@@ -7,7 +7,7 @@ import initManager from "../../template/manager/index.js";
  *  测试初始化安装依赖的功能，测试git init 和 pnpm install
  */
 const cmdPath = path.join(process.cwd(), "/tests/");
-const projectName = "project3";
+const projectName = "demo/project2";
 const options = {
   name: "clone-test",
   npmname: "clone-test",
@@ -19,7 +19,7 @@ const options = {
   commitlint: { commitlint: true },
   test: { Vitest: true },
   husky: true,
-  manager: "pnpm"
+  manager: null,
 }
 
 // 读取某个文件

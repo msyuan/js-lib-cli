@@ -6,3 +6,5 @@ demo
 pnpm-lock.yaml
 .gitignore
 vitest.config.js
+.editorconfig
+
