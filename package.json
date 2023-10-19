@@ -1,6 +1,6 @@
 {
   "name": "@msyuan/js-lib-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "一个快速创建JavaScript库开发项目的CLI工具",
   "author": "Lao Yuan",
   "license": "MIT",
