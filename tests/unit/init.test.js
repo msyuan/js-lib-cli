@@ -3,7 +3,7 @@ import fs from "node:fs";
 import { init } from "../../bin/initTest.js";
 
 /**
- *  测试模板初始化功能，模拟不选择值得情况
+ *  测试模板初始化功能，模拟不选择值的情况
  */
 const cmdPath = path.join(process.cwd(), "/tests/");
 const projectName = "demo/project3";
