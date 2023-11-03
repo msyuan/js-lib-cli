@@ -3,17 +3,17 @@
  */
 
 export default {
-  testMatch: ['**/tests/**/*.test.[jt]s?(x)'],
+  testMatch: ["**/tests/**/*.spec.[jt]s?(x)"],
   // 用来匹配 @/ 都指向到根目录/src/前文中(.*)`匹配的分组
   moduleNameMapper: {
-    '@/(.*)$': '<rootDir>/src/$1',
+    "@/(.*)$": "<rootDir>/src/$1",
   },
   // 覆盖率报告的目录，测试报告所存放的位置
-  coverageDirectory: 'coverage',
+  coverageDirectory: "coverage",
   transform: {
-    '^.+\\.js$': 'babel-jest',
-    '^.+\\.[jt]sx?$': 'babel-jest',
-    '^.+\\.ts$': 'ts-jest',
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.[jt]sx?$": "babel-jest",
+    "^.+\\.ts$": "ts-jest",
   },
   // 覆盖率修改，如果分支、行和函数覆盖率低于 80%，则会报错
   coverageThreshold: {

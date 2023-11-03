@@ -34,8 +34,6 @@
     "clone": "vitest clone --coverage",
     "copy": "vitest copy  --coverage",
     "merge": "vitest merge --coverage --ui",
-    "temp1": "vitest template1 --coverage --ui",
-    "temp2": "vitest template2 --coverage --ui --test-timeout=200000",
     "test-init": "vitest init --coverage --ui"
   },
   "bin": {

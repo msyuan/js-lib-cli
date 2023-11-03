@@ -1,5 +1,5 @@
 import path from "node:path";
-import { copyTmpl } from "../../utils/copy.cjs";
+import { copyTmpl, copyFile } from "../../utils/copy.cjs";
 import { mergeTmpl2JSON } from "../../utils/merge.js";
 import { currentPathResolve } from "../../utils/helper.js";
 
@@ -23,6 +23,8 @@ function initTest(cmdPath, name, option) {
       path.resolve(cmdPath, name, "jest.config.js"),
       option,
     );
+    // 复制单元测试demo文件到tests根目录文件夹下
+    copyFile(pathDirResolve(`tests/sum.spec.js`), path.resolve(cmdPath, name, "tests/sum.spec.js"));
   } else if (option.test.Vitest) {
     // 选择的是vitest
     copyTmpl(
@@ -30,6 +32,8 @@ function initTest(cmdPath, name, option) {
       path.resolve(cmdPath, name, "vite.config.js"),
       option,
     );
+    // 复制单元测试demo文件到tests根目录文件夹下
+    copyFile(pathDirResolve(`tests/sum.test.js`), path.resolve(cmdPath, name, "tests/sum.test.js"));
   }
   mergeTmpl2JSON(
     pathDirResolve(`package.json.tmpl`),
