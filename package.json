@@ -33,8 +33,12 @@
     "ui": "vitest --coverage --ui",
     "clone": "vitest clone --coverage",
     "copy": "vitest copy  --coverage",
-    "merge": "vitest merge --coverage --ui",
-    "test-init": "vitest init --coverage --ui"
+    "merge": "vitest merge --coverage",
+    "test-init": "vitest init --coverage --ui",
+    "temp1": "vitest template1 --coverage",
+    "temp2": "vitest template2 --coverage",
+    "temp3": "vitest template3 --coverage",
+    "jest-ts": "vitest jest-ts --coverage"
   },
   "bin": {
     "js": "bin/index.js",

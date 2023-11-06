@@ -1,11 +1,11 @@
 {
   "scripts": {
-    "lint-eslint": "eslint . --ext .cjs,.js,.ts --fix --cache --cache-location node_modules/.cache/eslint/",
+    "lint-eslint": "eslint . --ext .cjs,.mjs,.js,.ts --fix --cache --cache-location node_modules/.cache/eslint/",
     "lint": "pnpm lint-eslint<%if (prettier) {%> && pnpm lint-prettier<%}%>"
   },
   "devDependencies": {
     "eslint": "^8.45.0"<%if (prettier) {%> ,
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1"<%}%>
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1"<%}%>
   }
 }

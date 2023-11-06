@@ -7,7 +7,6 @@ import alias from '@rollup/plugin-alias';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
-console.log('import.meta.url', import.meta);
 //  __filename包含当前模块文件的绝对路径
 const __filename = fileURLToPath(import.meta.url);
 // 通过使用某些函数创建一个自定义__dirname变量来修复“__dirname is not defined in ES module scope”错误。
@@ -20,7 +19,12 @@ const isProd = NODE_ENV === 'production';
 const name = '<%=name%>';
 
 export default {
+  <%if (typescript) {%>
+  input: 'src/index.ts', // 入口文件
+  <%}%>
+  <%if (!typescript) {%>
   input: 'src/index.js', // 入口文件
+  <%}%>
   output: [
     {
       file: './dist/<%=name%>.esm.min.js', // 输出文件的路径和名称

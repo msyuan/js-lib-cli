@@ -1,0 +1,20 @@
+{
+  // 通过配置babel，jest中可以支持用esModule模块导入
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        },
+        "loose": true
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime"
+    ]
+  ]
+}

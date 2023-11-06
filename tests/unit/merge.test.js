@@ -1,5 +1,5 @@
 import { mergeJSON2JSON, mergeTmpl2JSON } from "@utils/merge.js";
-import { json3, json4 } from "../data/merge.js";
+import { json3, json4, json5 } from "../data/merge.js";
 import path from "node:path";
 import fs from "node:fs";
 

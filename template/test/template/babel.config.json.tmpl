@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }<%if (typescript) {%>,
+        "loose": true
+        <%}%>
+      }
+    ]<%if (typescript) {%>,
+    "@babel/preset-typescript"
+    <%}%>
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime"
+    ]
+  ]
+}

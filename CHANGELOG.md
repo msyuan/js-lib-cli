@@ -39,6 +39,19 @@
 - template_js版本更新至2.8.1 (原先2.4.0）
 
 
-## 1.0.6 / 2023-11-03
+## 1.0.6 / 2023-11-06
 
-- 增加项目初始化的单元测试demo文件，方便验证单测
+- 增加项目初始化的单元测试demo文件，方便执行pnpm test脚本
+- 增加babel.config.json配置文件
+- 修复TypeScript运行报错问题，增加ts入口文件和优化。
+- 单元测试用例问题修复
+- TypeScript和Jest生成文件优化
+### 版本更新
+- 修复prettier3.0和eslint-plugin-prettier4.2.1版本不兼容的问题，版本更新新至5.0.1
+- @commitlint/cli版本更新新至18.2.0 (原先17.8.1）  
+- @commitlint/config-conventional版本更新新至18.1.0 (原先17.8.1）
+- @typescript-eslint/eslint-plugin版本更新新至6.9.1 (原先5.62.0）
+- @typescript-eslint/parser版本更新新至6.9.1 (原先5.62.0）
+- eslint-config-prettier版本更新新至9.0.0 (原先8.10.0）
+- lint-staged版本更新新至15.0.2  (原先13.3.0）                            
+- rollup版本更新新至4.2.0  (原先3.28.1）             

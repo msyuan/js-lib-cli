@@ -1,3 +1,3 @@
-import { sum } from "../base/dist/sum.esm.min.js";
+import { sum } from '../dist/sum.esm.min.js';
 
 export default sum;

@@ -27,6 +27,11 @@ export function checkProjectExists(cmdPath, name) {
   return name ? fs.existsSync(path.resolve(cmdPath, name)) : false;
 }
 
+// 判断文件是否存在
+export function checkFileExists(filePath) {
+  return fs.existsSync(filePath);
+}
+
 //  filename包含当前模块文件的绝对路径
 const filename = fileURLToPath(import.meta.url);
 // 通过使用某些函数创建一个自定义__dirname变量来修复“__dirname is not defined in ES module scope”错误。

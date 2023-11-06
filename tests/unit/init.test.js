@@ -1,12 +1,12 @@
 import path from "node:path";
 import fs from "node:fs";
-import { init } from "../../bin/initTest.js";
+import { init } from "../../bin/init.js";
 
 /**
  *  测试模板初始化功能，模拟不选择值的情况
  */
-const cmdPath = path.join(process.cwd(), "/tests/");
-const projectName = "demo/project1";
+const cmdPath = process.cwd() + "/";
+const projectName = "tests/demo/project";
 const options = {
   name: "clone",
   npmname: "clone",
@@ -32,7 +32,7 @@ function readPackage() {
 
 describe("测试init初始化", () =>{
   it("初始化init", async () => {
-    await init(options, projectName, cmdPath);
+    await init(options, projectName);
   })
   it("不选择typescript", async () => {
     const result = readPackage();
